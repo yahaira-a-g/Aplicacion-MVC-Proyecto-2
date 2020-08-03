@@ -2,16 +2,16 @@ package Modelo;
 
 public class Producto {
     private int idproducto;
-    private String codigo;
+    private int codigo;
     private String nombre;
-    private String cantidad;
-    private String costo;
+    private int cantidad;
+    private double costo;
     private String estado;
     
     //Constructor Vacio
     public Producto(){ 
     }
-    public Producto(String codigo, String nombre, String cantidad, String costo,  String estado){ 
+    public Producto(int codigo, String nombre, int cantidad, double costo,  String estado){ 
         this.codigo = codigo;
         this.nombre = nombre;
         this.cantidad = cantidad;
@@ -26,10 +26,10 @@ public class Producto {
         this.idproducto = idproducto;
     }
     
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
@@ -40,17 +40,17 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public String getCantidad() {
+    public int getCantidad() {
         return cantidad;
     }
-    public void setCantidad(String apellidos) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 
-    public String getCosto() {
+    public double getCosto() {
         return costo;
     }
-    public void setCosto(String dni) {
+    public void setCosto(double costo) {
         this.costo = costo;
     }
 
